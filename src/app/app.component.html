@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <button (click)="showData()">Show Data</button>
+  {{selectedData}}
+  <ul>
+    <li *ngFor="let det of selectedData; let index = index">
+      Selected {{index}}-{{det.name}}
+    </li>
+  </ul>
+</div>
